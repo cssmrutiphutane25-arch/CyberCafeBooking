@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.landing-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+/* Navbar */
+
+.navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background: white;
+    border-bottom: 1px solid #e7eaf0;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #172033;
+}
+
+.logo span {
+    color: #4f46e5;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.login-btn,
+.signup-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.login-btn {
+    background: white;
+    border: 1px solid #d9dce5;
+    color: #172033;
+}
+
+.signup-btn {
+    background: #4f46e5;
+    border: 1px solid #4f46e5;
+    color: white;
+}
+
+/* Hero */
+
+.hero-section {
+    min-height: calc(100vh - 125px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 100px;
+    gap: 70px;
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.welcome-text {
+    color: #4f46e5;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin: 0;
+    color: #172033;
+}
+
+.hero-content h1 span {
+    color: #4f46e5;
+}
+
+.hero-description {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #687083;
+    max-width: 560px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background: #4f46e5;
+    color: white;
+    border: 1px solid #4f46e5;
+}
+
+.secondary-btn {
+    background: white;
+    color: #172033;
+    border: 1px solid #d9dce5;
+}
+
+/* Hero Card */
+
+.hero-card {
+    width: 350px;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(30, 40, 70, 0.12);
+    text-align: center;
+}
+
+.computer-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border-radius: 18px;
+    background: #eef0ff;
+    font-size: 38px;
+}
+
+.hero-card h2 {
+    margin: 10px 0;
+    font-size: 23px;
+}
+
+.hero-card p {
+    color: #687083;
+    line-height: 1.6;
+}
+
+.mini-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e7eaf0;
+}
+
+.mini-stats div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mini-stats strong {
+    font-size: 24px;
+    color: #4f46e5;
+}
+
+.mini-stats span {
+    font-size: 13px;
+    color: #7b8190;
+}
+
+/* Footer */
+
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #858b9a;
+    font-size: 13px;
+}
+
+/* Buttons */
+
+.login-btn:hover,
+.secondary-btn:hover {
+    background: #f1f2f6;
+}
+
+.signup-btn:hover,
+.primary-btn:hover {
+    background: #4338ca;
+}

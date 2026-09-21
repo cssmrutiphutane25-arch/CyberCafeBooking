@@ -1,69 +1,101 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import { useRouter } from "next/navigation";
+import "./page.css";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.js</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    const router = useRouter();
+
+    return (
+        <main className="landing-page">
+
+            <nav className="navbar">
+                <div className="logo">
+                    Cyber<span>Café</span>
+                </div>
+
+                <div className="nav-buttons">
+                    <button
+                        className="login-btn"
+                        onClick={() => router.push("/login")}
+                    >
+                        Sign In
+                    </button>
+
+                    <button
+                        className="signup-btn"
+                        onClick={() => router.push("/signup")}
+                    >
+                        Sign Up
+                    </button>
+                </div>
+            </nav>
+
+            <section className="hero-section">
+
+                <div className="hero-content">
+                    <p className="welcome-text">
+                        WELCOME TO CYBER CAFÉ
+                    </p>
+
+                    <h1>
+                        Computer Booking
+                        <br />
+                        Made <span>Simple.</span>
+                    </h1>
+
+                    <p className="hero-description">
+                        Easily manage computer bookings, keep track of
+                        customers, and organize your cyber café bookings
+                        in one simple place.
+                    </p>
+
+                    <div className="hero-buttons">
+                        <button
+                            className="primary-btn"
+                            onClick={() => router.push("/signup")}
+                        >
+                            Get Started
+                        </button>
+
+                        <button
+                            className="secondary-btn"
+                            onClick={() => router.push("/login")}
+                        >
+                            Sign In
+                        </button>
+                    </div>
+                </div>
+
+                <div className="hero-card">
+                    <div className="computer-icon">🖥️</div>
+
+                    <h2>Manage Your Bookings</h2>
+
+                    <p>
+                        Add, edit and manage your cyber café
+                        computer bookings easily.
+                    </p>
+
+                    <div className="mini-stats">
+                        <div>
+                            <strong>24</strong>
+                            <span>Bookings</span>
+                        </div>
+
+                        <div>
+                            <strong>12</strong>
+                            <span>Computers</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <footer>
+                © 2026 Cyber Café Computer Booking System
+            </footer>
+
+        </main>
+    );
 }
