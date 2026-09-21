@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cyber Café Computer Booking System
 
-## Getting Started
+A desktop-based Cyber Café Computer Booking System developed using Electron.js, Next.js and Supabase.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- User Sign Up and Sign In
+- Supabase Authentication
+- Protected Dashboard
+- Add Bookings
+- View Bookings
+- Edit Bookings
+- Delete Bookings
+- User-specific booking records
+- Supabase Database Integration
+- Logout
+- Loading and Error Handling
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Electron.js
+- Next.js
+- JavaScript
+- Supabase
+- PostgreSQL
+- CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Database
 
-## Learn More
+The application uses Supabase to store booking records.
 
-To learn more about Next.js, take a look at the following resources:
+Each booking contains:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Customer Name
+- Note
+- User ID
+- Booking ID
+- Created Date
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Purpose
 
-## Deploy on Vercel
+The system allows cyber café users to manage computer booking records through a simple desktop application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+PHUTANE SMRUTI PRAVIN JYOTSNA
